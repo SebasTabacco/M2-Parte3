@@ -4,10 +4,36 @@ body {
 .contenedor {
   max-width: 960px;
   margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  background-color: #5aaafc;
+
+  animation-name: MiAnimacion;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes MiAnimacion {
+  from {
+    font-size: 0%;
+    margin-left: 80%;
+  }
+
+  50% {
+    font-size: 100%;
+  }
+
+  to {
+    font-size: 100%;
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
 header {
   background-color: #8fa68e;
   padding: 20px;
+  text-align: end;
 }
 .holder {
   display: flex;
@@ -37,6 +63,10 @@ footer {
   background-color: #ccc59e;
   text-align: center;
 }
+.swing:hover {
+  animation: swing 1s ease;
+  animation-iteration-count: 5;
+}
 /*manipulo color y info segun medidas*
 /*cambios mayor a 601px*/
 @media only screen and (max-width: 996px) {
@@ -46,7 +76,7 @@ footer {
   header {
     text-align: center;
     border-radius: 12px;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid chartreuse;
   }
   .holder {
     flex-wrap: wrap;
@@ -78,17 +108,16 @@ footer {
   footer {
     background-color: aquamarine;
     border-radius: 15px;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid chartreuse;
     font-size: 20px;
   }
 }
-
 /*el cambio va de 0 a 600px*/
 @media only screen and (max-width: 600px) {
   body {
     background-color: #b2c6cc;
   }
-  header {
+  /*header {
     text-align: center;
     border-radius: 12px;
     border-bottom: 3px solid blue;
@@ -127,4 +156,4 @@ footer {
     border-bottom: 5px solid blue;
     font-size: 20px;
   }
-}
+}*/
