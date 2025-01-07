@@ -1,13 +1,13 @@
 body {
   background-color: burlywood;
 }
+
 .contenedor {
   max-width: 960px;
   margin: 0 auto;
   width: 80px;
   height: 80px;
   background-color: #5aaafc;
-
   animation-name: MiAnimacion;
   animation-duration: 8s;
   animation-fill-mode: forwards;
@@ -29,7 +29,6 @@ body {
     width: 90%;
   }
 }
-
 header {
   background-color: #8fa68e;
   padding: 20px;
@@ -41,10 +40,15 @@ header {
 nav {
   background-color: #c0392b;
   width: 30%;
+  margin:auto;
+  padding: 0;
+  border-radius: 15px 10px 5px 5px;
+
 }
 nav ul li {
   list-style: none;
   padding: 10px;
+  display: flex;
 }
 nav ul li a {
   color: white;
@@ -67,6 +71,7 @@ footer {
   animation: swing 1s ease;
   animation-iteration-count: 5;
 }
+
 /*manipulo color y info segun medidas*
 /*cambios mayor a 601px*/
 @media only screen and (max-width: 996px) {
